@@ -2,7 +2,6 @@ package com.sahseh.alarm
 
 import android.app.AlarmManager
 import android.app.PendingIntent
-import android.app.TimePicker
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -76,7 +75,7 @@ class MainActivity : AppCompatActivity() {
             hint = "اكتب الاسم بالإنجليزية، مثل: cup"
             setText(prefs.getString("target", "cup"))
             textSize = 16f
-            singleLine = true
+            isSingleLine = true
             setPadding(dp(14), 0, dp(14), 0)
             background = rounded(Color.rgb(242, 246, 241), 14, Color.rgb(224, 232, 224))
         }
